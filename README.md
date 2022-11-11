@@ -20,6 +20,7 @@
 - [@InakiVa](https://github.com/InakiVA)
 - [@JFranciscoGR03](https://github.com/JFranciscoGR03)
 - [@ViniciusDePadua](https://www.github.com/viniciusdepadua)
+- [@FedeZenten](https://www.github.com/viniciusdepadua)
 
 
 ## About the project
