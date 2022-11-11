@@ -14,6 +14,8 @@
 ## Authors
 
 - [@EricBastos](https://www.github.com/EricBastos)
+- [@EnzoVargasM](https://www.github.com/EnzoVargasM)
+- [@ViniciusDePadua](https://www.github.com/viniciusdepadua)
 - [@adri-agsz](https://www.github.com/adri-agsz)
 - [@Aram32mm](https://github.com/Aram32mm)
 - [@InakiVa](https://github.com/InakiVA)
