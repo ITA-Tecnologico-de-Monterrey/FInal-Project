@@ -63,8 +63,6 @@ It is very important that, as software engineers, we can come up with innovative
 our area of expertise in order to reduce people's vulnerability during these situations. The proposed
 solution, we think, could be an effective solution for the management of crisis, specially in those places in which,
 for socio-economical factors, are more prone to be affected by these disasters.
-## User Stories
+## Requirements
 
-### Technical requirements
-
-### Non-technical requirements
+Check [Requirements.md](https://github.com/ITA-Tecnologico-de-Monterrey/FInal-Project/blob/main/REQUIREMENTS.md) to read the user stories.
