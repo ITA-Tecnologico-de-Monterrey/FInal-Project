@@ -33,7 +33,7 @@ During these events, drones will be deployed so that the victims' information
 can be intercepted. The following image was extracted from the RETO description, which
 is a visual representations of this process and a proposed design for the mobile app:
 
-![IotSolution]([[https://experiencia21.tec.mx/courses/307528/files/114737145/preview](https://github.com/ITA-Tecnologico-de-Monterrey/FInal-Project/blob/main/IoT%20Architecture.png)](https://github.com/ITA-Tecnologico-de-Monterrey/FInal-Project/blob/main/IoT%20Architecture.png?raw=true))
+![IotSolution](https://github.com/ITA-Tecnologico-de-Monterrey/FInal-Project/blob/main/IoT%20Architecture.png)
 
 This will be implemented through an 4-stage IoT architecture: 
 * Sensors and actuators
