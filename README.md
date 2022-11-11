@@ -1,5 +1,5 @@
 
-# Taquihnos du Macaco - GSL Final Course - ITA & Tecnológico de Monterrey
+# Taquinhos du Macaco - GSL Final Course - ITA & Tecnológico de Monterrey
 
 
 
