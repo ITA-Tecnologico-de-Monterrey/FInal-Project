@@ -13,13 +13,13 @@
 
 ## Authors
 
-- [@EricBastos](https://www.github.com/EricBastos)
-- [@EnzoVargasM](https://www.github.com/EnzoVargasM)
-- [@ViniciusDePadua](https://www.github.com/viniciusdepadua)
 - [@adri-agsz](https://www.github.com/adri-agsz)
 - [@Aram32mm](https://github.com/Aram32mm)
+- [@EnzoVargasM](https://www.github.com/EnzoVargasM)
+- [@EricBastos](https://www.github.com/EricBastos)
 - [@InakiVa](https://github.com/InakiVA)
 - [@JFranciscoGR03](https://github.com/JFranciscoGR03)
+- [@ViniciusDePadua](https://www.github.com/viniciusdepadua)
 
 
 ## About the project
