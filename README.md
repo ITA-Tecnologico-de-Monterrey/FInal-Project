@@ -17,6 +17,7 @@
 - [@adri-agsz](https://www.github.com/adri-agsz)
 - [@Aram32mm](https://github.com/Aram32mm)
 - [@InakiVa](https://github.com/InakiVA)
+- [JFranciscoGR03](https://github.com/JFranciscoGR03)
 
 
 ## About the project
