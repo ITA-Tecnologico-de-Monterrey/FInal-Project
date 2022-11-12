@@ -1,7 +1,21 @@
 
-# Taquinhos du Macaco - GSL Final Course - ITA & Tecnológico de Monterrey
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/ITA-Tecnologico-de-Monterrey">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
+  <h3 align="center">GSL Final Course - ITA & Tecnológico de Monterrey</h3>
 
+  <p align="center">
+    Taquinhos deu Macaco Team!
+    <br />
+    <a href="https://github.com/ITA-Tecnologico-de-Monterrey/Final-Project"><strong>Explore the project »</strong></a>
+    <br />
+    <br />
+  </p>
+</div>
 
 
 ## Table of Contents
@@ -38,7 +52,7 @@ During these events, drones will be deployed so that the victims' information
 can be intercepted. The following image was extracted from the RETO description, which
 is a visual representations of this process and a proposed design for the mobile app:
 
-![IotSolution](https://github.com/ITA-Tecnologico-de-Monterrey/FInal-Project/blob/main/IoT%20Architecture.png)
+![IotSolution](/images/architecture.png)
 
 This will be implemented through an 4-stage IoT architecture: 
 * Sensors and actuators
@@ -67,4 +81,4 @@ solution, we think, could be an effective solution for the management of crisis,
 for socio-economical factors, are more prone to be affected by these disasters.
 ## Requirements
 
-Check [Requirements.md](https://github.com/ITA-Tecnologico-de-Monterrey/FInal-Project/blob/main/REQUIREMENTS.md) to read the user stories.
+Check [Requirements.md](https://github.com/ITA-Tecnologico-de-Monterrey/Final-Project/blob/main/REQUIREMENTS.md) to read the user stories.
