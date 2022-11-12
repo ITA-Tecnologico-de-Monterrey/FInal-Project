@@ -3,10 +3,11 @@
 <br />
 <div align="center">
   <a href="https://github.com/ITA-Tecnologico-de-Monterrey">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.png" alt="Logo" width="160" height="100">
   </a>
 
-  <h3 align="center">GSL Final Course - ITA & Tecnológico de Monterrey</h3>
+  <h3 align="center" style="font-size:50px;>
+  GSL Final Course - ITA & Tecnológico de Monterrey</h3>
 
   <p align="center">
     Taquinhos deu Macaco Team!
