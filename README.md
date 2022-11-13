@@ -3,7 +3,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/ITA-Tecnologico-de-Monterrey">
-    <img src="images/logo.png" alt="Logo" width="380" height="250">
+    <img src="images/logo.png" alt="Logo" width="350" height="200">
   </a>
 
   <h3 align="center" style="font-size:100px";>
