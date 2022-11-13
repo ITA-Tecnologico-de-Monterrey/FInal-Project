@@ -6,7 +6,7 @@
     <img src="images/logo.png" alt="Logo" width="350" height="200">
   </a>
 
-  <h3 align="center" style="font-size:100px";>
+  <h3 align="center" style="font-size:150px";>
   GSL Final Course - ITA & Tecnológico de Monterrey</h3>
 
   <p align="center">
