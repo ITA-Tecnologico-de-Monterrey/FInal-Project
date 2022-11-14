@@ -77,7 +77,7 @@ crisis management center, whis is hosted in the cloud.
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+This project will be developed using the following technologies, each one of them carefully choosen to fulfill the requirements that the project demands.
 
 * [Mininet-Wifi](https://mininet-wifi.github.io/)
 * [![Android Device][android.com]][android-url]
@@ -86,7 +86,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * [![python][python.org]][Python-url]
 * [![MySQL][mysql.com]][mysql-url]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#https://github.com/ITA-Tecnologico-de-Monterrey/gsl-iot-2022/blob/main/SOLUTION_DESCRIPTION.md">Read more</a>)</p>
 
 
 
