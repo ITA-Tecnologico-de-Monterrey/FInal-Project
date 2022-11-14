@@ -86,7 +86,7 @@ This project will be developed using the following technologies, each one of the
 * [![python][python.org]][Python-url]
 * [![MySQL][mysql.com]][mysql-url]
 
-<p align="right">(<a href="#https://github.com/ITA-Tecnologico-de-Monterrey/gsl-iot-2022/blob/main/SOLUTION_DESCRIPTION.md">Read more</a>)</p>
+<p align="right">(<a href="https://github.com/ITA-Tecnologico-de-Monterrey/gsl-iot-2022/blob/main/SOLUTION_DESCRIPTION.md">Read more</a>)</p>
 
 
 
