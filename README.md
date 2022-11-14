@@ -79,13 +79,12 @@ crisis management center, whis is hosted in the cloud.
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [![Mininet-Wifi]][https://mininet-wifi.github.io/]
-* [![Android Device][https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white]][https://developer.android.com/studio]
-* [![Eclipse Mosquitto][https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white]][https://mosquitto.org/]
-* [![Grafana]][https://grafana.com/oss/grafana/]
-* [![Python][Pyhton.org]][Python.url]
-* [![Python][Python.org]][Python-url]
-* [![MySQL][https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white]][https://www.mysql.com/]
+* [![Mininet-Wifi][]][https://mininet-wifi.github.io/]
+* [![Android Device][android.com]][adroid-url]
+* [![Eclipse Mosquitto][eclipse.com]][eclipse-url]
+* [![Grafana][]][https://grafana.com/oss/grafana/]
+* [![python][python.org]][Python-url]
+* [![MySQL][mysql.com]][myql-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -112,5 +111,11 @@ Check [Requirements.md](https://github.com/ITA-Tecnologico-de-Monterrey/Final-Pr
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[Python.org]: https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white
-[Python-url]: https://www.python.org/
+[python.org]: https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white
+[python-url]: https://www.python.org/
+[mysql.com]: https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white
+[mysql-url]: https://www.mysql.com/
+[eclipse.com]: https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white
+[eclipse-url]: https://mosquitto.org/
+[android.com]: https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white
+[android-url]: https://developer.android.com/studio
