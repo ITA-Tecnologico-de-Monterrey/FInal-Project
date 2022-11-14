@@ -119,3 +119,4 @@ Check [Requirements.md](https://github.com/ITA-Tecnologico-de-Monterrey/Final-Pr
 [eclipse-url]: https://mosquitto.org/
 [android.com]: https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white
 [android-url]: https://developer.android.com/studio
+
