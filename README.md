@@ -35,12 +35,6 @@
   </ol>
 </details>
 
-## Table of Contents
-
-* [Authors](#Authors)
-* [About the project](#About-the-project)
-* [Motivation](#Motivation-of-the-project)
-* [User Stories](#User-Stories)
 
 ## Authors
 
@@ -89,7 +83,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * [![Android Device]][https://developer.android.com/studio]
 * [![Eclipse Mosquitto]][https://mosquitto.org/]
 * [![Grafana]][https://grafana.com/oss/grafana/]
-* [![Python]][https://www.python.org/]
+* [![Python][/images/python.png]][https://www.python.org/]
 * [![MySQL]][https://www.mysql.com/]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
