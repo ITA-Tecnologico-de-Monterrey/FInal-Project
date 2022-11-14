@@ -80,11 +80,11 @@ crisis management center, whis is hosted in the cloud.
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 * [![Mininet-Wifi]][https://mininet-wifi.github.io/]
-* [![Android Device]][https://developer.android.com/studio]
-* [![Eclipse Mosquitto]][https://mosquitto.org/]
+* [![Android Device][https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white]][https://developer.android.com/studio]
+* [![Eclipse Mosquitto][https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white]][https://mosquitto.org/]
 * [![Grafana]][https://grafana.com/oss/grafana/]
-* [![Python][python.org]][https://www.python.org/]
-* [![MySQL][mysql.com]][https://www.mysql.com/]
+* [![Python][https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white]][https://www.python.org/]
+* [![MySQL][https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white]][https://www.mysql.com/]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
