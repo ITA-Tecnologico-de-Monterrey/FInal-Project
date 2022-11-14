@@ -84,6 +84,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * [![Eclipse Mosquitto][https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white]][https://mosquitto.org/]
 * [![Grafana]][https://grafana.com/oss/grafana/]
 * [![Python][Pyhton.org]][Python.url]
+* [![Python][Python.org]][Python-url]
 * [![MySQL][https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white]][https://www.mysql.com/]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
