@@ -83,7 +83,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * [![Android Device][https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white]][https://developer.android.com/studio]
 * [![Eclipse Mosquitto][https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white]][https://mosquitto.org/]
 * [![Grafana]][https://grafana.com/oss/grafana/]
-* [![Python][https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white]][https://www.python.org/]
+* [![Python][Pyhton.org]][Python.url]
 * [![MySQL][https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white]][https://www.mysql.com/]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -107,3 +107,9 @@ for socio-economical factors, are more prone to be affected by these disasters.
 ## Requirements
 
 Check [Requirements.md](https://github.com/ITA-Tecnologico-de-Monterrey/Final-Project/blob/main/REQUIREMENTS.md) to read the user stories.
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[Python.org]: https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white
+[Python-url]: https://www.python.org/
