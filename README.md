@@ -83,8 +83,8 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * [![Android Device]][https://developer.android.com/studio]
 * [![Eclipse Mosquitto]][https://mosquitto.org/]
 * [![Grafana]][https://grafana.com/oss/grafana/]
-* [![Python][Python.org]][https://www.python.org/]
-* [![MySQL]][https://www.mysql.com/]
+* [![Python][python.org]][https://www.python.org/]
+* [![MySQL][mysql.com]][https://www.mysql.com/]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
