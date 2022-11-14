@@ -18,6 +18,22 @@
   </p>
 </div>
 
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#Authors">Authors</a></li>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    <li>
+      <a href="#About-the-project">About The Project</a>
+    </li>
+    <li><a href="#Motivation-of-the-project">Project's Motivation</a></li>
+    <li><a href="#Requirements">Requirements</a></li>
+  </ol>
+</details>
 
 ## Table of Contents
 
@@ -65,6 +81,19 @@ The drones will provide the two middle layers through an MQTT broker
 that will allow the users to forward messages from their smartphones to the
 crisis management center, whis is hosted in the cloud.
 
+### Built With
+
+This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+
+* [![Mininet-Wifi]][https://mininet-wifi.github.io/]
+* [![Android Device]][https://developer.android.com/studio]
+* [![Eclipse Mosquitto]][https://mosquitto.org/]
+* [![Grafana]][https://grafana.com/oss/grafana/]
+* [![Python]][https://www.python.org/]
+* [![MySQL]][https://www.mysql.com/]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 ## Project's motivation
@@ -80,6 +109,7 @@ It is very important that, as software engineers, we can come up with innovative
 our area of expertise in order to reduce people's vulnerability during these situations. The proposed
 solution, we think, could be an effective solution for the management of crisis, specially in those places in which,
 for socio-economical factors, are more prone to be affected by these disasters.
+
 ## Requirements
 
 Check [Requirements.md](https://github.com/ITA-Tecnologico-de-Monterrey/Final-Project/blob/main/REQUIREMENTS.md) to read the user stories.
