@@ -79,10 +79,10 @@ crisis management center, whis is hosted in the cloud.
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [Mininet-Wifi][https://mininet-wifi.github.io/]
+* [Mininet-Wifi](https://mininet-wifi.github.io/)
 * [![Android Device][android.com]][android-url]
 * [![Eclipse Mosquitto][eclipse.com]][eclipse-url]
-* [Grafana][https://grafana.com/oss/grafana/]
+* [Grafana](https://grafana.com/oss/grafana/)
 * [![python][python.org]][Python-url]
 * [![MySQL][mysql.com]][mysql-url]
 
