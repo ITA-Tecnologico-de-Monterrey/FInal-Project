@@ -10,7 +10,7 @@
   GSL Final Course - ITA & Tecnológico de Monterrey</h3>
 
   <p align="center">
-    Taquinhos deu Macaco Team!
+    Taquinhos du Macaco Team!
     <br />
     <a href="https://github.com/ITA-Tecnologico-de-Monterrey/Final-Project"><strong>Explore the project »</strong></a>
     <br />
