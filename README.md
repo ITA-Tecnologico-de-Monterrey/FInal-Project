@@ -43,7 +43,7 @@
 - [@DanielHBtec](https://github.com/DanielHBtec)
 - [@EnzoVargasM](https://www.github.com/EnzoVargasM)
 - [@EricBastos](https://www.github.com/EricBastos)
-- [@FedeZenten](https://www.github.com/viniciusdepadua)
+- [@FedeZenten](https://www.github.com/FedeChocuh)
 - [@InakiVa](https://github.com/InakiVA)
 - [@JFranciscoGR03](https://github.com/JFranciscoGR03)
 - [@ViniciusDePadua](https://www.github.com/viniciusdepadua)
