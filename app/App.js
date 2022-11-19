@@ -17,58 +17,103 @@ init({
   sync: {},
 });
 
+const options = {
+  host: 'broker.emqx.io',
+  port: 8083,
+  path: '/myRandomTopic',
+  id: 'id_bizuzao'
+};
+client = new Paho.MQTT.Client(options.host, options.port, options.path);
+
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       topic: '',
-      subscribedTopic: '',
+      subscribedTopic: 'myRandomTopic',
       message: '',
       messageList: [],
       status: '',
       ip: '',
-      port: 0,
+      port: '',
       severity: '',
+      echo: 'init',
     };
-    // client.onConnectionLost = this.onConnectionLost;
-    // client.onMessageArrived = this.onMessageArrived;
   }
 
-  onConnectionLost = responseObject => {
-    // TODO: onConnectionLost
-  };
-
-  onMessageArrived = message => {
-    // TODO: onMessageArrived
-  };
-
-  subscribeTopic = () => {
-    // TODO: subscribeTopic
-  };
-
   onConnect = () => {
-    // TODO: onConnect
-  };
-
-  onFailure = err => {
-    // TODO: onFailure
-  };
-
+    console.log('onConnect');
+    this.setState({ status: 'connected' });
+  }
+  // 连接失败
+  onFailure = (err) => {
+    console.log('Connect failed!');
+    console.log(err);
+    this.setState({ status: 'failed' });
+  }
+  // 连接 MQTT 服务器
   connect = () => {
-    // TODO: connect
-  };
-
+    this.setState(
+      { status: 'isFetching' },
+      () => {
+        client.connect({
+          onSuccess: this.onConnect,
+          useSSL: false,
+          timeout: 3,
+          onFailure: this.onFailure
+        });
+      }
+    );
+  }
+  // 连接丢失
+  onConnectionLost=(responseObject)=>{
+    if (responseObject.errorCode !== 0) {
+      console.log('onConnectionLost:' + responseObject.errorMessage);
+    }
+  }
+  // 收到消息
+  onMessageArrived = (message )=> {
+    console.log('onMessageArrived:' + message.payloadString);
+    newmessageList = this.state.messageList;
+    newmessageList.unshift(message.payloadString);
+    this.setState({ messageList: newmessageList });
+    // this.MessageListRef.scrollToEnd({animated: false});
+  }
+  onChangeTopic = (text) => {
+    this.setState({ topic: text });
+  }
+  // 主题订阅
+  subscribeTopic = () => {
+    this.setState(
+      { subscribedTopic: this.state.topic },
+      () => {
+        client.subscribe(this.state.subscribedTopic, { qos: 0 });
+      }
+    );
+  }
+  // 取消订阅
   unSubscribeTopic = () => {
-    // TODO: unSubscribeTopic
-  };
-
-  sendMessage = () => {
-    // TODO: sendMessage
-  };
+    client.unsubscribe(this.state.subscribedTopic);
+    this.setState({ subscribedTopic: '' });
+  }
+  onChangeMessage = (text) => {
+    this.setState({ message: text });
+  }
+  // 消息发布
+  sendMessage = () =>{
+    var message = new Paho.MQTT.Message(options.id + ':' + this.state.severity);
+    message.destinationName = this.state.subscribedTopic;
+    console.log(message.destinationName)
+    client.send(message);
+    console.log("message sent", this.state.severity)
+  }
 
   render() {
     return (
       <View style={styles.container}>
+        <View>
+          <Text>websocket echo: {this.state.echo}</Text>
+        </View>
         <View style={styles.connectContainer}>
           <Text style={styles.label}>Broker IP:</Text>
           <TextInput
@@ -82,7 +127,7 @@ class App extends Component {
           <TextInput
             style={styles.input}
             value={this.state.port}
-            onChangeText={event => this.setState({port: Number(event)})}
+            onChangeText={event => this.setState({port: String(event)})}
           />
         </View>
         {this.state.status === 'connected' ? (
@@ -90,12 +135,10 @@ class App extends Component {
             type="solid"
             title="DISCONNECT"
             onPress={() => {
-              client.disconnect();
-              clearInterval(interval);
-              this.setState({status: '', subscribedTopic: ''});
+              this.socket.close()
             }}
             buttonStyle={{backgroundColor: '#397af8'}}
-            disabled={!this.state.ip || !this.state.port}
+            //disabled={!this.state.ip || !this.state.port}
           />
         ) : (
           <Button
@@ -103,7 +146,7 @@ class App extends Component {
             title="CONNECT"
             onPress={this.connect}
             buttonStyle={{backgroundColor: '#72F178'}}
-            disabled={!this.state.ip || !this.state.port}
+            //disabled={!this.state.ip || !this.state.port}
           />
         )}
         <View style={styles.severityContainer}>
