@@ -18,9 +18,9 @@ init({
 });
 
 const options = {
-  host: 'broker.emqx.io',
-  port: 8083,
-  path: '/myRandomTopic',
+  host: 'ec2-52-67-28-51.sa-east-1.compute.amazonaws.com',
+  port: 8080,
+  path: '/mqtt',
   id: 'id_bizuzao'
 };
 client = new Paho.MQTT.Client(options.host, options.port, options.path);
@@ -45,13 +45,13 @@ class App extends Component {
     console.log('onConnect');
     this.setState({ status: 'connected' });
   }
-  // 连接失败
+
   onFailure = (err) => {
     console.log('Connect failed!');
     console.log(err);
     this.setState({ status: 'failed' });
   }
-  // 连接 MQTT 服务器
+
   connect = () => {
     this.setState(
       { status: 'isFetching' },
@@ -65,24 +65,33 @@ class App extends Component {
       }
     );
   }
-  // 连接丢失
+
+  disconnect = () => {
+    this.setState(
+      { status: '' },
+      () => {
+        client.disconnect()
+      }
+    );
+  }
+
   onConnectionLost=(responseObject)=>{
     if (responseObject.errorCode !== 0) {
       console.log('onConnectionLost:' + responseObject.errorMessage);
     }
   }
-  // 收到消息
+
   onMessageArrived = (message )=> {
     console.log('onMessageArrived:' + message.payloadString);
     newmessageList = this.state.messageList;
     newmessageList.unshift(message.payloadString);
     this.setState({ messageList: newmessageList });
-    // this.MessageListRef.scrollToEnd({animated: false});
+
   }
   onChangeTopic = (text) => {
     this.setState({ topic: text });
   }
-  // 主题订阅
+
   subscribeTopic = () => {
     this.setState(
       { subscribedTopic: this.state.topic },
@@ -91,7 +100,7 @@ class App extends Component {
       }
     );
   }
-  // 取消订阅
+
   unSubscribeTopic = () => {
     client.unsubscribe(this.state.subscribedTopic);
     this.setState({ subscribedTopic: '' });
@@ -99,11 +108,10 @@ class App extends Component {
   onChangeMessage = (text) => {
     this.setState({ message: text });
   }
-  // 消息发布
+
   sendMessage = () =>{
     var message = new Paho.MQTT.Message(options.id + ':' + this.state.severity);
     message.destinationName = this.state.subscribedTopic;
-    console.log(message.destinationName)
     client.send(message);
     console.log("message sent", this.state.severity)
   }
@@ -135,7 +143,7 @@ class App extends Component {
             type="solid"
             title="DISCONNECT"
             onPress={() => {
-              this.socket.close()
+              this.disconnect()
             }}
             buttonStyle={{backgroundColor: '#397af8'}}
             //disabled={!this.state.ip || !this.state.port}
