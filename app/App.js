@@ -18,10 +18,10 @@ init({
 });
 
 const options = {
-  host: 'ec2-52-67-28-51.sa-east-1.compute.amazonaws.com',
+  host: 'ec2-52-67-152-119.sa-east-1.compute.amazonaws.com',
   port: 8080,
   path: '/mqtt',
-  id: 'id_bizuzao'
+  id: 'android-client-mqtt'
 };
 client = new Paho.MQTT.Client(options.host, options.port, options.path);
 
@@ -30,20 +30,26 @@ class App extends Component {
     super(props);
     this.state = {
       topic: '',
-      subscribedTopic: 'myRandomTopic',
-      message: '',
+      subscribedTopic: 'android/mqtt',
+      message: 'Android asking for help',
       messageList: [],
       status: '',
       ip: '',
       port: '',
       severity: '',
       echo: 'init',
+      x: Math.floor((Math.random() * 1001)),
+      y: Math.floor((Math.random() * 1001)),
+      z: Math.floor((Math.random() * 1001)),
     };
   }
 
   onConnect = () => {
     console.log('onConnect');
     this.setState({ status: 'connected' });
+    this.interval = setInterval(() => {
+      this.sendMessage();
+    }, 5000)
   }
 
   onFailure = (err) => {
@@ -70,7 +76,8 @@ class App extends Component {
     this.setState(
       { status: '' },
       () => {
-        client.disconnect()
+        client.disconnect();
+        clearInterval(this.interval);
       }
     );
   }
@@ -110,7 +117,15 @@ class App extends Component {
   }
 
   sendMessage = () =>{
-    var message = new Paho.MQTT.Message(options.id + ':' + this.state.severity);
+    const msg_content = JSON.stringify({
+      x: this.state.x,
+      y: this.state.y,
+      z: this.state.z,
+      severity: this.state.severity,
+      msg: this.state.message,
+      time: Date.now(),
+    })
+    var message = new Paho.MQTT.Message(msg_content);
     message.destinationName = this.state.subscribedTopic;
     client.send(message);
     console.log("message sent", this.state.severity)
@@ -119,9 +134,6 @@ class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <View>
-          <Text>websocket echo: {this.state.echo}</Text>
-        </View>
         <View style={styles.connectContainer}>
           <Text style={styles.label}>Broker IP:</Text>
           <TextInput
@@ -186,7 +198,7 @@ class App extends Component {
         <Button
           type="solid"
           title="UPDATE"
-          onPress={this.sendMessage}
+          onPress={e => this.setState({message: 'Updated android message'})}
           buttonStyle={{backgroundColor: '#127676'}}
           disabled={!this.state.severity}
         />
