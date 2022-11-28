@@ -21,7 +21,7 @@ const options = {
   host: 'ec2-52-67-152-119.sa-east-1.compute.amazonaws.com',
   port: 8080,
   path: '/mqtt',
-  id: 'android-client-mqtt'
+  id: 'android-mqtt-' + Math.floor((Math.random() * 1001))
 };
 client = new Paho.MQTT.Client(options.host, options.port, options.path);
 
@@ -36,11 +36,10 @@ class App extends Component {
       status: '',
       ip: '',
       port: '',
-      severity: '',
+      severity: 2,
       echo: 'init',
-      x: Math.floor((Math.random() * 1001)),
-      y: Math.floor((Math.random() * 1001)),
-      z: Math.floor((Math.random() * 1001)),
+      lat: 19.27 + (Math.random() * 0.03),
+      lon: -99.122 + (Math.random() * .02),
     };
   }
 
@@ -118,9 +117,9 @@ class App extends Component {
 
   sendMessage = () =>{
     const msg_content = JSON.stringify({
-      x: this.state.x,
-      y: this.state.y,
-      z: this.state.z,
+      id: options.id,
+      lat: this.state.lat,
+      lon: this.state.lon,
       severity: this.state.severity,
       msg: this.state.message,
       time: Date.now(),
@@ -175,21 +174,21 @@ class App extends Component {
             <Button
               type="solid"
               title="Low"
-              onPress={e => this.setState({severity: 'Low'})}
+              onPress={e => this.setState({severity: 1})}
               buttonStyle={{backgroundColor: '#72F178', margin: 20}}
               style={styles.severityButtonContainer}
             />
             <Button
               type="solid"
               title="Medium"
-              onPress={e => this.setState({severity: 'Medium'})}
+              onPress={e => this.setState({severity: 2})}
               buttonStyle={{backgroundColor: '#FFF145', margin: 20}}
               style={styles.severityButtonContainer}
             />
             <Button
               type="solid"
               title="High"
-              onPress={e => this.setState({severity: 'High'})}
+              onPress={e => this.setState({severity: 3})}
               buttonStyle={{backgroundColor: '#E21100', margin: 20}}
               style={styles.severityButtonContainer}
             />
