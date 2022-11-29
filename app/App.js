@@ -18,7 +18,7 @@ init({
 });
 
 const options = {
-  host: 'ec2-52-67-152-119.sa-east-1.compute.amazonaws.com',
+  host: 'ec2-52-67-28-59.sa-east-1.compute.amazonaws.com',
   port: 8080,
   path: '/mqtt',
   id: 'android-mqtt-' + Math.floor((Math.random() * 1001))
@@ -30,7 +30,7 @@ class App extends Component {
     super(props);
     this.state = {
       topic: '',
-      subscribedTopic: 'android/mqtt',
+      subscribedTopic: 'events',
       message: 'Android asking for help',
       messageList: [],
       status: '',
@@ -117,13 +117,14 @@ class App extends Component {
 
   sendMessage = () =>{
     const msg_content = JSON.stringify({
-      id: options.id,
+      client: options.id,
       lat: this.state.lat,
       lon: this.state.lon,
-      severity: this.state.severity,
+      color: this.state.severity,
       msg: this.state.message,
       time: Date.now(),
     })
+    console.log(msg_content)
     var message = new Paho.MQTT.Message(msg_content);
     message.destinationName = this.state.subscribedTopic;
     client.send(message);
