@@ -1,0 +1,14 @@
+{
+  "Name": "D",
+  "MyAddress": "localhost",
+  "MyPort": "10003",
+  "Edges": {
+    "E": 1
+  },
+  "Connections": {
+    "E": {
+      "Address": "localhost",
+      "Port": "10004"
+    }
+  }
+}
