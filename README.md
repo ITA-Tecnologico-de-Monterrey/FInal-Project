@@ -110,7 +110,15 @@ Check [Requirements.md](https://github.com/ITA-Tecnologico-de-Monterrey/Final-Pr
 
 ## How To...
 
-Set up the Mosquitto Brokers 
+* Mosquitto
+First, you should setup both the Mosquitto Bridge and the Mosquitto Central. To do so, using the cloud service of your choice, create two different virtual machines: the first one, the bridge, and the second one, the central. Install Mosquitto Eclipse in both machines (which can be done with the command sudo apt install -y mosquitto).
+
+For the bridge, use the configuration file inside ubuntu_vm_ec2_bridge/Mosquitto, and for the central, use the configuration file inside ubuntu_vm_ec2_central/Mosquitto. Inside the bridge config file, make sure to change the bridge address to the address of the machine hosting your central. You can finally start the service with the command mosquitto -c mosquitto.conf.
+
+Note: after installing Mosquitto, it automatically starts an instance on background. You might want to kill it first, because the ports might conflict, but you can also change the ports inside the conf files.`
+
+* App
+Simply follow any react-native set up link, which includes installing Node.js, the react-native lib and setting up Android Studio. After setting the environment up, simply run npm run android to start the Android app. You'll want to configure the bridge machine address inside app.js to make sure it connects to your bridge vm.
 
 Set up a Publisher, a Broker and a Subscriber using Mosca JS
 
