@@ -120,6 +120,15 @@ Note: after installing Mosquitto, it automatically starts an instance on backgro
 
 * Set up a Publisher, a Broker and a Subscriber using Mosca JS
 
+Using Mosca JS is pretty simple. First, make sure to have node 14.0.0, feel free to use either nvm or other tool to install it. Once you have the latest version of node and npm installed, open the folder were you have your mosca js scripts and your dependencies listen on a json file and simply run:
+```bash
+npm i
+```
+And then, just execute or code using:
+```bash
+node <name_code_file>
+```
+
 * Set up the React-Native Android App
 
 Simply follow any react-native set up link, which includes installing Node.js, the react-native lib and setting up Android Studio. After setting the environment up, simply run npm run android to start the Android app. You'll want to configure the bridge machine address inside app.js to make sure it connects to your bridge vm.
