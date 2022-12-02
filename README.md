@@ -110,7 +110,8 @@ Check [Requirements.md](https://github.com/ITA-Tecnologico-de-Monterrey/Final-Pr
 
 ## How To...
 
-* Mosquitto
+
+* Set up the Mosquitto Brokers
 
 First, you should setup both the Mosquitto Bridge and the Mosquitto Central. To do so, using the cloud service of your choice, create two different virtual machines: the first one, the bridge, and the second one, the central. Install Mosquitto Eclipse in both machines (which can be done with the command:
 ```bash
@@ -124,6 +125,7 @@ mosquitto -c mosquitto.conf
 
 Note: after installing Mosquitto, it automatically starts an instance on background. You might want to kill it first, because the ports might conflict, but you can also change the ports inside the conf files.`
 
+
 * Set up a Publisher, a Broker and a Subscriber using Mosca JS
 
 Using Mosca JS is pretty simple. First, make sure to have node 14.0.0, feel free to use either nvm or other tool to install it. Once you have the latest version of node and npm installed, open the folder were you have your mosca js scripts and your dependencies listen on a json file and simply run:
@@ -135,6 +137,7 @@ And then, just execute your code using:
 node <name_code_file>
 ```
 Note: If you get an error in the validator.js file, go to that file, edit it with nano and simply comment the line which is thrwoing the error.
+
 
 * Set up the React-Native Android App
 
@@ -148,6 +151,7 @@ npx react-native run-android
 ```
 
 You'll want to configure the bridge machine address inside app.js to make sure it connects to your bridge vm.
+
 
 * Set up the MYSQL Database
 
@@ -175,6 +179,7 @@ Just make sure to clone this [repo](https://github.com/ITA-Tecnologico-de-Monter
 
 
 * Set up the Grafana Dashboard
+
 Finally, for the dashboard install grafana following these [steps](https://grafana.com/grafana/download) on ubuntu. And once you've got everything installed. Start it using:
 ```bash
 sudo systemctl start grafana-server.service
