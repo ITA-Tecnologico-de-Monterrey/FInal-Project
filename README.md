@@ -174,9 +174,15 @@ sudo mysql -uroot -p <db_name> < events.sql
 Just make sure to clone this [repo](https://github.com/ITA-Tecnologico-de-Monterrey/eventsDB) and that your present working directory is inside this repo.
 
 
-
 * Set up the Grafana Dashboard
-
+Finally, for the dashboard install grafana following these [steps](https://grafana.com/grafana/download) on ubuntu. And once you've got everything installed. Start it using:
+```bash
+sudo systemctl start grafana-server.service
+```
+Now to make a tunnel, use nginx, install it with:
+```bash
+sudo apt install nginx
+```
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
