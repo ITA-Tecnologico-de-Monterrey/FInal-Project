@@ -138,7 +138,16 @@ Note: If you get an error in the validator.js file, go to that file, edit it wit
 
 * Set up the React-Native Android App
 
-Simply follow any react-native set up link, which includes installing Node.js, the react-native lib and setting up Android Studio. After setting the environment up, simply run npm run android to start the Android app. You'll want to configure the bridge machine address inside app.js to make sure it connects to your bridge vm.
+Simply follow any react-native set up link, like this [one](https://reactnative.dev/docs/environment-setup) which includes installing Node.js, the react-native lib and setting up Android Studio. After setting the environment up, simply run the following command to start metro:
+```bash
+npx react-native start
+```
+Open your app on Android Studio and start runing your emulator. And in another terminal select the android file within the app and run:
+```bash
+npx react-native run-android
+```
+
+You'll want to configure the bridge machine address inside app.js to make sure it connects to your bridge vm.
 
 * Set up the MYSQL Database
 
