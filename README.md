@@ -112,9 +112,15 @@ Check [Requirements.md](https://github.com/ITA-Tecnologico-de-Monterrey/Final-Pr
 
 * Mosquitto
 
-First, you should setup both the Mosquitto Bridge and the Mosquitto Central. To do so, using the cloud service of your choice, create two different virtual machines: the first one, the bridge, and the second one, the central. Install Mosquitto Eclipse in both machines (which can be done with the command sudo apt install -y mosquitto).
+First, you should setup both the Mosquitto Bridge and the Mosquitto Central. To do so, using the cloud service of your choice, create two different virtual machines: the first one, the bridge, and the second one, the central. Install Mosquitto Eclipse in both machines (which can be done with the command:
+```bash
+sudo apt install -y mosquitto
+```
 
-For the bridge, use the configuration file inside ubuntu_vm_ec2_bridge/Mosquitto, and for the central, use the configuration file inside ubuntu_vm_ec2_central/Mosquitto. Inside the bridge config file, make sure to change the bridge address to the address of the machine hosting your central. You can finally start the service with the command mosquitto -c mosquitto.conf.
+For the bridge, use the configuration file inside ubuntu_vm_ec2_bridge/Mosquitto, and for the central, use the configuration file inside ubuntu_vm_ec2_central/Mosquitto. Inside the bridge config file, make sure to change the bridge address to the address of the machine hosting your central. You can finally start the service with the command:
+```bash
+mosquitto -c mosquitto.conf
+```
 
 Note: after installing Mosquitto, it automatically starts an instance on background. You might want to kill it first, because the ports might conflict, but you can also change the ports inside the conf files.`
 
@@ -128,6 +134,7 @@ And then, just execute or code using:
 ```bash
 node <name_code_file>
 ```
+Note: If you get an error in the validator.js file, go to that file, edit it with nano and simply comment the line which is thrwoing the error.
 
 * Set up the React-Native Android App
 
