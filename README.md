@@ -108,7 +108,18 @@ for socio-economical factors, are more prone to be affected by these disasters.
 
 Check [Requirements.md](https://github.com/ITA-Tecnologico-de-Monterrey/Final-Project/blob/main/REQUIREMENTS.md) to read the user stories.
 
-## How To Set It Up
+## How To...
+
+Set up the Mosquitto Brokers 
+
+Set up a Publisher, a Broker and a Subscriber using Mosca JS
+
+Set up the React-Native Android App
+
+Set up the MYSQL Database
+
+Set up the Grafana Dashboard
+
 
 Check [Requirements.md](https://github.com/ITA-Tecnologico-de-Monterrey/Final-Project/blob/main/REQUIREMENTS.md) to read the user stories.
 
