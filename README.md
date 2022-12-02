@@ -113,6 +113,7 @@ Check [Requirements.md](https://github.com/ITA-Tecnologico-de-Monterrey/Final-Pr
 Set up the Mosquitto Brokers 
 
 Set up a Publisher, a Broker and a Subscriber using Mosca JS
+Go top this file in the project(/images/architecture.png)
 
 Set up the React-Native Android App
 
