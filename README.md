@@ -130,7 +130,7 @@ Using Mosca JS is pretty simple. First, make sure to have node 14.0.0, feel free
 ```bash
 npm i
 ```
-And then, just execute or code using:
+And then, just execute your code using:
 ```bash
 node <name_code_file>
 ```
@@ -150,6 +150,30 @@ npx react-native run-android
 You'll want to configure the bridge machine address inside app.js to make sure it connects to your bridge vm.
 
 * Set up the MYSQL Database
+
+Once you have your virtual machines set up, go to the central one, open it in the terminal. Run the following commands to update the vm:
+```bash
+sudo apt update
+```
+```bash
+sudo apt upgrade
+```
+Now that you have your vm ready, go ahead and install mysql:
+```bash
+sudo apt install mysql-server
+```
+Now that you have mysql, you can go ahead and enter the system by running the following command:
+```bash
+sudo mysql -uroot
+```
+Feel free to add a password to the root, or even to create a new user. To learn more about this, visit this [page](https://phoenixnap.com/kb/how-to-create-new-mysql-user-account-grant-privileges)
+Now that you have the erver running, feel free to create a database and a tabla for the project. If you would like to import the database of the project here in the github. Simply run:
+```bash
+sudo mysql -uroot -p <db_name> < events.sql
+```
+Just make sure to clone this [repo](https://github.com/ITA-Tecnologico-de-Monterrey/eventsDB) and that your present working directory is inside this repo.
+
+
 
 * Set up the Grafana Dashboard
 
