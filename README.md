@@ -35,7 +35,7 @@
     </li>
     <li><a href="#Motivation-of-the-project">Project's Motivation</a></li>
     <li><a href="#Requirements">Requirements</a></li>
-    <li><a href="#Set-Up-Guide">How To...</a></li>
+    <li><a href="#How-To...">Set-Up Guide.</a></li>
   </ol>
 </details>
 
