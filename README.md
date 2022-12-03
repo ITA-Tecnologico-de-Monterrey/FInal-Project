@@ -212,7 +212,7 @@ cd /etc/nginx/sites-enabled
 ```
 Delete the default file:
 ```bash
-udo rm default 
+sudo rm default 
 ```
 And restart the server:
 ```bash
@@ -220,7 +220,7 @@ sudo systemctl restart nginx
 ```
 And your'e all set, now when if you enter your central vm machine's ip on a browser, it will rediret you to a grafana site where the user and password is both admin.
 
-For more questions about the set up and compilation, feel free to watch thge youtube videos provided by our page or to contact us via e-mail
+For more questions about the set up and compilation, feel free to watch the youtube videos provided by our page or to contact us.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
