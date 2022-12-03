@@ -121,7 +121,7 @@ First, you should set up both the Mosquitto Bridge and the Mosquitto Central. To
 sudo apt install -y mosquitto
 ```
 
-For the bridge, use the [configuration file](https://github.com/ITA-Tecnologico-de-Monterrey/Final-Project/tree/main/ubuntu_vm_ec2_bridge/Mosquitto) inside ubuntu_vm_ec2_bridge/Mosquitto, and for the central, use the configuration file inside ubuntu_vm_ec2_central/Mosquitto. Inside the bridge config file, make sure to change the bridge address to the address of the machine hosting your central. You can finally start the service with the command:
+For the bridge, use the [configuration file](https://github.com/ITA-Tecnologico-de-Monterrey/Final-Project/tree/main/ubuntu_vm_ec2_bridge/Mosquitto) inside ubuntu_vm_ec2_bridge/Mosquitto, and for the central, use the [configuration file](https://github.com/ITA-Tecnologico-de-Monterrey/Final-Project/tree/main/ubuntu_vm_ec2_central/Mosquitto) inside ubuntu_vm_ec2_central/Mosquitto. Inside the bridge config file, make sure to change the bridge address to the address of the machine hosting your central. You can finally start the service with the command:
 ```bash
 mosquitto -c mosquitto.conf
 ```
@@ -144,7 +144,7 @@ Note: If you get an error in the validator.js file, go to that file, edit it wit
 
 * Set up the React-Native Android App
 
-Simply follow any react-native set up link, like this [one](https://reactnative.dev/docs/environment-setup) which includes installing Node.js, the react-native lib and setting up Android Studio. After setting the environment up, simply run the following command to start metro:
+Simply follow any react-native set up link, like this [one](https://reactnative.dev/docs/environment-setup) which includes installing Node.js, the react-native lib and setting up Android Studio. After setting the environment up, simply run the following command inside the app terminal to start metro:
 ```bash
 npx react-native start
 ```
@@ -174,7 +174,7 @@ Now that you have mysql, you can go ahead and enter the system by running the fo
 sudo mysql -uroot
 ```
 Feel free to add a password to the root, or even to create a new user. To learn more about this, visit this [page](https://phoenixnap.com/kb/how-to-create-new-mysql-user-account-grant-privileges)
-Now that you have the erver running, feel free to create a database and a tabla for the project. If you would like to import the database of the project here in the github. Simply run:
+Now that you have the server running, feel free to create a database and a tabla for the project. If you would like to import the database of the project here in the github. Simply run:
 ```bash
 sudo mysql -uroot -p <db_name> < events.sql
 ```
@@ -187,10 +187,26 @@ Finally, for the dashboard install grafana following these [steps](https://grafa
 ```bash
 sudo systemctl start grafana-server.service
 ```
+Note: run the commands that appear in the installation to set up grafana to start the server automatically everytime the vm starts.
+/n/n
+
 Now to make a tunnel, use nginx, install it with:
 ```bash
 sudo apt install nginx
 ```
+Now to make your grafana server show in a browser when you enter your ip, go to the directory:
+```bash
+ cd /etc/nginx/sites-available
+```
+Run
+```bash
+ sudo touch grafana
+```
+And write out the grafana file with this [configuration](https://github.com/ITA-Tecnologico-de-Monterrey/eventsDB/blob/main/grafana). Now that you have your grafana file, simply run: to create a simbolic link
+```bash
+ sudo ln -s /etc/nginx/sites-available/grafana /etc/nginx/sites-enabled/
+```
+
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
