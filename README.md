@@ -116,12 +116,12 @@ Check [Requirements.md](https://github.com/ITA-Tecnologico-de-Monterrey/Final-Pr
 
 * Set up the Mosquitto Brokers
 
-First, you should setup both the Mosquitto Bridge and the Mosquitto Central. To do so, using the cloud service of your choice, create two different virtual machines: the first one, the bridge, and the second one, the central. Install Mosquitto Eclipse in both machines (which can be done with the command:
+First, you should set up both the Mosquitto Bridge and the Mosquitto Central. To do so, using the cloud service of your choice, create two different virtual machines: the first one, the bridge, and the second one, the central. Install Mosquitto Eclipse in both machines, which can be done with the command:
 ```bash
 sudo apt install -y mosquitto
 ```
 
-For the bridge, use the configuration file inside ubuntu_vm_ec2_bridge/Mosquitto, and for the central, use the configuration file inside ubuntu_vm_ec2_central/Mosquitto. Inside the bridge config file, make sure to change the bridge address to the address of the machine hosting your central. You can finally start the service with the command:
+For the bridge, use the [configuration file](https://github.com/ITA-Tecnologico-de-Monterrey/Final-Project/tree/main/ubuntu_vm_ec2_bridge/Mosquitto) inside ubuntu_vm_ec2_bridge/Mosquitto, and for the central, use the configuration file inside ubuntu_vm_ec2_central/Mosquitto. Inside the bridge config file, make sure to change the bridge address to the address of the machine hosting your central. You can finally start the service with the command:
 ```bash
 mosquitto -c mosquitto.conf
 ```
