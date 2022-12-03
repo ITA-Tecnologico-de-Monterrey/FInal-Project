@@ -33,7 +33,7 @@
     <li>
       <a href="#About-the-project">About The Project</a>
     </li>
-    <li><a href="#Project">Project's Motivation</a></li>
+    <li><a href="#Project's-Motivation">Project's Motivation</a></li>
     <li><a href="#Requirements">Requirements</a></li>
     <li><a href="#How-To">Set-Up Guide.</a></li>
   </ol>
@@ -94,7 +94,7 @@ This project will be developed using the following technologies, each one of the
 
 
 
-## Project's motivation
+## Project's Motivation
 
 Every year, thousands of people are victims of natural disasters(tornados, earthquakes,
  floods, hurricanes, etc.). Some of these events, due to climate change, are expected to
