@@ -12,7 +12,7 @@
   <p align="center">
     Taquinhos du Macaco Team!
     <br />
-    <a href="https://www.youtube.com/@taquinhosdumacaco">Team YouTube Channel</a>
+    <a href="https://www.youtube.com/@taquinhosdumacaco">->Team YouTube Channel<-</a>
     <br />
     <br />
     <a href="https://github.com/ITA-Tecnologico-de-Monterrey/Final-Project"><strong>Explore the project »</strong></a>
