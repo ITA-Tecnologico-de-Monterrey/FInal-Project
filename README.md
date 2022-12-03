@@ -35,6 +35,7 @@
     </li>
     <li><a href="#Motivation-of-the-project">Project's Motivation</a></li>
     <li><a href="#Requirements">Requirements</a></li>
+    <li><a href="#Set-Up-Guide">How To...</a></li>
   </ol>
 </details>
 
@@ -188,7 +189,6 @@ Finally, for the dashboard install grafana following these [steps](https://grafa
 sudo systemctl start grafana-server.service
 ```
 Note: run the commands that appear in the installation to set up grafana to start the server automatically everytime the vm starts.
-/n/n
 
 Now to make a tunnel, use nginx, install it with:
 ```bash
@@ -202,11 +202,25 @@ Run
 ```bash
  sudo touch grafana
 ```
-And write out the grafana file with this [configuration](https://github.com/ITA-Tecnologico-de-Monterrey/eventsDB/blob/main/grafana). Now that you have your grafana file, simply run: to create a simbolic link
+And write out the grafana file with this [configuration](https://github.com/ITA-Tecnologico-de-Monterrey/eventsDB/blob/main/grafana). Now that you have your grafana file, to create a simbolic link simply run: 
 ```bash
  sudo ln -s /etc/nginx/sites-available/grafana /etc/nginx/sites-enabled/
 ```
+Once you have finished that, go to the sites-enabled directory with:
+```bash
+cd /etc/nginx/sites-enabled
+```
+Delete the default file:
+```bash
+udo rm default 
+```
+And restart the server:
+```bash
+sudo systemctl restart nginx
+```
+And your'e all set, now when if you enter your central vm machine's ip on a browser, it will rediret you to a grafana site where the user and password is both admin.
 
+For more questions about the set up and compilation, feel free to watch thge youtube videos provided by our page or to contact us via e-mail
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
